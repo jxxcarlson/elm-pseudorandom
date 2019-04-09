@@ -19,7 +19,7 @@ In this connection, we repeat John von Neumann's joke: *Anyone who attempts to g
 
 **NOTE:** the seed must be a positive integer.
 
-We use the linear congruential generator of Lewis, Goodman, and Miller (1) for the integerSequence function. For floatSequence we use the generator triple linear congruential generator of (2).
+We use the linear congruential generator of Lewis, Goodman, and Miller (1) for the integerSequence function. For floatSequence we use the triple linear congruential generator of (2).
 
 **References**
 

@@ -4,11 +4,11 @@ module PseudoRandom exposing (integerSequence, floatSequence, m0, roundTo)
 floatSequence and integerSequence. The first produces
 a list of n floating point numbers in a specified range.
 The second produces a list of positive integers in the range
-1 to m0 = 214748364. A pseudo-random sequence is a sequence
+1 to 214748363. A pseudo-random sequence is a sequence
 of numbers that resembles a random sequence even though it is
 produced by deterministic means. The notion "resembles" can
 be made precise using various statistical tests.
-
+Â
 Examples:
 
 floatSequence 3 7 (0, 1) |> List.map (roundTo 4) == [0.448,0.0988,0.246]
@@ -18,7 +18,7 @@ integerSequence 3 8 == [123092948, 28845728, 98310392]
 NOTE: the seed must be a positive integer.
 
 We use the linear congruential generator of (1), Lewis, Goodman, and Miller, for the integerSequence function.
-For floatSequence we use the generator triple linear congruential generator
+For floatSequence we use the triple linear congruential generator
 of (2).
 
 References:
@@ -144,7 +144,7 @@ f3 maybeInt =
             modBy m3 (a3 * k)
 
 
-{-| The largest intnger that integerSequence will produce is m0 - 1.
+{-| The largest integer that integerSequence will produce is m0 - 1.
 -}
 m0 : Int
 m0 =
