@@ -8,7 +8,7 @@ The second produces a list of positive integers in the range
 of numbers that resembles a random sequence even though it is
 produced by deterministic means. The notion "resembles" can
 be made precise using various statistical tests.
-Â
+
 Examples:
 
 floatSequence 3 7 (0, 1) |> List.map (roundTo 4) == [0.448,0.0988,0.246]

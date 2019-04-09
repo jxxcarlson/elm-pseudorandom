@@ -1,11 +1,9 @@
 
 # Pseudorandom
 
-PseudoRandom is a package for creating lists of pseudorandom numbers — lists of integers or floats that resemble lists produced by random means, even though they are generated deterministically.  This resemblance can be made precise using various statistical sense.
+PseudoRandom is a package for creating lists of pseudorandom numbers — lists of integers or floats that resemble lists produced by random means, even though they are generated deterministically.  This resemblance can be made precise using various statistical tests.
 
 In this connection, we repeat John von Neumann's joke: *Anyone who attempts to generate random numbers by deterministic means is, of course, living in a state of sin.*
-
-
 
 **Examples:**
 
