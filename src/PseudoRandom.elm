@@ -15,6 +15,8 @@ floatSequence 3 7 (0, 1) |> List.map (roundTo 4) == [0.448,0.0988,0.246]
 
 integerSequence 3 8 == [123092948, 28845728, 98310392]
 
+NOTE: the seed must be a positive integer.
+
 We use the linear congruential generator of (1), Lewis, Goodman, and Miller, for the integerSequence function.
 For floatSequence we use the generator triple linear congruential generator
 of (2).
