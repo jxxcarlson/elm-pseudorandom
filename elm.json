@@ -1,7 +1,7 @@
 {
     "type": "package",
-    "name": "jxxcarlson/elm-tar",
-    "summary": "Elm tar utility",
+    "name": "jxxcarlson/elm-pseudorandom",
+    "summary": "Pseudorandom number generators",
     "license": "BSD-3-Clause",
     "version": "1.0.0",
     "exposed-modules": [
