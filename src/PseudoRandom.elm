@@ -32,7 +32,7 @@ References:
 -}
 
 
-{-| Using the seed, produce a list of n floats in the range [a,b)
+{-| Produce a list of n floats in the range [a,b) using the seed 'seed'.
 -}
 floatSequence : Int -> Int -> ( Float, Float ) -> List Float
 floatSequence n seed ( a, b ) =
@@ -40,14 +40,14 @@ floatSequence n seed ( a, b ) =
         |> List.map (\x -> (b - a) * x + a)
 
 
-{-| Using the seed, produce a list of n integers k, where 0 <= k < m0.
+{-| Produce a list of n integers in the range [0, m0) using the seed 'seed'.
 -}
 integerSequence : Int -> Int -> List Int
 integerSequence n seed =
     List.take n <| orbit f0 n seed
 
 
-{-| Using the seed, produce a list of n floating point numbers in the range [0,1)
+{-| Produce a list of n floats in the range [0,1) using the seed 'seed'.
 -}
 urandSequence : Int -> Int -> List Float
 urandSequence n seed =
@@ -80,7 +80,7 @@ integerSequence_ f n seed =
 
 
 {-| Repeatedly apply a function f : Maybe Int -> Int
-to a strating value to produce a List Int.
+to a starting value to produce a List Int.
 
 > orbit f1 3 1
 > [20829,18177,10727] : List Int
@@ -191,7 +191,7 @@ a3 =
 
 
 {-| mod1 x is the fractional part of the floating point
-number x, i.e., -1 < x < 1. If x >= 0 then mod11 x >= 0.
+number x, i.e., -1 < x < 1. If x >= 0 then mod1 x >= 0.
 -}
 mod1 : Float -> Float
 mod1 x =
